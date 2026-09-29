@@ -40,3 +40,8 @@ This project documents the deployment, security hardening, and operational valid
 echo "<h1>Hello from Bastion CLI Lab Challenge!</h1>" > index.html
 aws s3 ls
 aws s3 cp index.html s3://lab-web-assets-<bucket-id>/
+
+
+🧹 Lifecycle Management & Cost Optimization
+To adhere to financial and operational best practices, the entire infrastructure was cleanly torn down post-verification using Terraform to prevent unnecessary cloud resource costs:
+terraform destroy
